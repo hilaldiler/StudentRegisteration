@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="247dp">
+
+        <RelativeLayout
+            android:id="@+id/imageUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/hilal" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageUser"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <ListView
+            android:id="@+id/listViewStudent"
+            android:layout_width="382dp"
+            android:layout_height="343dp"
+            android:layout_below="@+id/textUser"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="204dp" />
+
+        <EditText
+            android:id="@+id/txtLesson"
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="124dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Ders Adı" />
+
+        <Button
+            android:id="@+id/addLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="161dp"
+            android:layout_marginRight="161dp"
+            android:layout_marginBottom="47dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="EKLE"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
